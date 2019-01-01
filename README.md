@@ -1,5 +1,5 @@
 Polinom Solver
-v1.0 maksimum prime 4
+v1.0 maximum prime 4
 v2.0 unlimited prime, with change #define Size;
 
 //                                                                                                               
