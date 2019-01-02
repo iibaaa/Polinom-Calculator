@@ -19,7 +19,7 @@ int is_number(char ch);
 class equsolver{
 private:
     string equ;
-    int nums[Size];
+    int nums[Size] = {0}
     int x;
     int result;
 public:
@@ -27,6 +27,9 @@ public:
     equsolver(string A = "A*x*x*x*x + B*x*x*x + C*x*x + D*x + E",int a = 0){
         x = a;
         equ = A;
+        // Activate this part if all first numbers not set 0
+        //for(int i = 0;i<Size;i++)
+        //    nums[i] = 0;
         delete_unwanted(&equ);
         find_nums();
         Solve();
@@ -46,7 +49,6 @@ public:
         cout << endl;
         //for(int i = 0;i<Size;i++)
             //cout << nums[i] << " " ;
-        //cout << "nums " <<endl<< A << endl << B <<endl<< C <<endl<<D <<endl<< E <<endl;
         cout << "= " << result;
         cout << endl;
     }
@@ -115,6 +117,6 @@ int howmanyx(string a){
         if(a.at(i) != 'x')
             break;
     }
-    //cout <<endl << x << " adet x" <<endl;
+    //cout <<endl << i << " adet x" <<endl;
     return i;
 }
