@@ -65,7 +65,7 @@ public:
                     if(equ.at(j) == 'x' || j == equ.size()-1)
                     {
                         temp = stoi(equ.substr(i,j));
-                        nums[howmanyx(equ.substr(j,equ.size()-j))] =temp;
+                        nums[howmanyx(equ.substr(j,equ.size()-j))] +=temp;
                         i = j;
                         break;
                     }
