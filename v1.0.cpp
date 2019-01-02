@@ -55,7 +55,12 @@ public:
                 {
                     if(equ.at(j) == 'x' || j == equ.size()-1)
                     {
-                        temp = stoi(equ.substr(i,j));
+                        if(equ.at(j-1) == '+')
+                            temp = 1;
+                        else if(equ.at(j-1) == '-')
+                            temp = -1;
+                        else
+                            temp = stoi(equ.substr(i,j));
                         //cout <<"temp = " <<temp<<endl;
                         switch(howmanyx(equ.substr(j,4)))
                         {
