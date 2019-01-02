@@ -107,6 +107,8 @@ int is_number(char ch){
 }
 
 void delete_unwanted(string *a){
+    if(a->at(0) != '-')
+        a->insert(0,1,'+');
     for(int i = 0;i<(*a).size();i++){
         if((*a).at(i) == ' ' || a->at(i) == '*'){
             (*a).erase(i,1);
