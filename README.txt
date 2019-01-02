@@ -1,7 +1,8 @@
 Polinom Solver
 v1.0 maximum prime 4
 v2.0 unlimited prime, with change #define Size;
-v2.1  xxxx - xx type polinom writing added. without number (1 , -1)
+v2.1 xxxx - xx type polinom writing added. without number (1 , -1)
+v2.2 3xxx + 3xxx +4xxx + 2xx - 5xx style added
 
 //                                                                                                                       
 //          bbbbbbbb                                                                   dddddddd                          
