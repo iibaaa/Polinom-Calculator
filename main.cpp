@@ -63,9 +63,9 @@ public:
                 {
                     if(equ.at(j) == 'x' || j == equ.size()-1)
                     {
-                        if(equ.at(i) == '+')
+                        if(equ.at(j-1) == '+')
                             temp = 1;
-                        else if(equ.at(i) == '-')
+                        else if(equ.at(j-1) == '-')
                             temp = -1;
                         else
                             temp = stoi(equ.substr(i,j));
