@@ -47,7 +47,7 @@ public:
     {
         cout << endl;
         //for(int i = 0;i<Size;i++)
-            //cout << nums[i] << " " ;
+        //cout << nums[i] << " " ;
         cout << "= " << result;
         cout << endl;
     }
@@ -63,7 +63,12 @@ public:
                 {
                     if(equ.at(j) == 'x' || j == equ.size()-1)
                     {
-                        temp = stoi(equ.substr(i,j));
+                        if(equ.at(j-1) == '+')
+                            temp = 1;
+                        else if(equ.at(j-1) == '-')
+                            temp = -1;
+                        else
+                            temp = stoi(equ.substr(i,j));
                         //cout <<"temp = " <<temp<<endl;
                         nums[howmanyx(equ.substr(j,equ.size()-j))] =temp;
                         i = j;
