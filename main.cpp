@@ -46,6 +46,7 @@ public:
     void print_result()
     {
         cout << endl;
+        //testing the numbers
         //for(int i = 0;i<Size;i++)
         //cout << nums[i] << " " ;
         cout << "= " << result;
@@ -69,7 +70,6 @@ public:
                             temp = -1;
                         else
                             temp = stoi(equ.substr(i,j));
-                        //cout <<"temp = " <<temp<<endl;
                         nums[howmanyx(equ.substr(j,equ.size()-j))] =temp;
                         i = j;
                         break;
@@ -123,6 +123,5 @@ int howmanyx(string a){
         if(a.at(i) != 'x')
             break;
     }
-    //cout <<endl << i << " adet x" <<endl;
     return i;
 }
