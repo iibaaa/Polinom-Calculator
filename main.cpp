@@ -12,9 +12,9 @@
 #define Size 100 // max prime number
 using namespace  std;
 
-int howmanyx(string);
 void delete_unwanted(string *);
 int is_number(char ch);
+int howmanyx(string);
 
 class equsolver{
 private:
