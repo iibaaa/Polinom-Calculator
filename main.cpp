@@ -19,7 +19,7 @@ int howmanyx(string);
 class equsolver{
 private:
     string equ;
-    int nums[Size] = {0};
+    int nums[Size];
     int x;
     int result;
 public:
@@ -27,8 +27,8 @@ public:
         x = a;
         equ = A;
         // Activate this part if all first numbers not set 0
-        //for(int i = 0;i<Size;i++)
-        //    nums[i] = 0;
+        for(int i = 0;i<Size;i++)
+            nums[i] = 0;
         delete_unwanted(&equ);
         find_nums();
         Solve();
