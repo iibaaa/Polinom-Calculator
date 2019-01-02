@@ -63,12 +63,7 @@ public:
                 {
                     if(equ.at(j) == 'x' || j == equ.size()-1)
                     {
-                        if(equ.at(j-1) == '+')
-                            temp = 1;
-                        else if(equ.at(j-1) == '-')
-                            temp = -1;
-                        else
-                            temp = stoi(equ.substr(i,j));
+                        temp = stoi(equ.substr(i,j));
                         //cout <<"temp = " <<temp<<endl;
                         nums[howmanyx(equ.substr(j,equ.size()-j))] =temp;
                         i = j;
