@@ -1,6 +1,6 @@
 //
 //  main.cpp
-//  Class Equ Solver
+//  Class Equ Solver v2.2
 //
 //  Created by Batuhan Aydın on 1.01.2019.
 //  Copyright © 2019 i.Batuhan Aydın. All rights reserved.
