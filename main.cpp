@@ -19,7 +19,7 @@ int howmanyx(string);
 class equsolver{
 private:
     string equ;
-    int nums[Size] = {0}
+    int nums[Size] = {0};
     int x;
     int result;
 public:
