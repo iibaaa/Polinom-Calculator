@@ -23,8 +23,7 @@ private:
     int x;
     int result;
 public:
-    // A x x x x + B x x x + C x x + D x x + E
-    equsolver(string A = "A*x*x*x*x + B*x*x*x + C*x*x + D*x + E",int a = 0){
+    equsolver(string A = "1*x*x*x*x + 1*x*x*x + 1*x*x + 1*x + 1",int a = 0){
         x = a;
         equ = A;
         // Activate this part if all first numbers not set 0
@@ -64,7 +63,12 @@ public:
                 {
                     if(equ.at(j) == 'x' || j == equ.size()-1)
                     {
-                        temp = stoi(equ.substr(i,j));
+                        if(equ.at(i) == '+')
+                            temp = 1;
+                        else if(equ.at(i) == '-')
+                            temp = -1;
+                        else
+                            temp = stoi(equ.substr(i,j));
                         //cout <<"temp = " <<temp<<endl;
                         nums[howmanyx(equ.substr(j,equ.size()-j))] =temp;
                         i = j;
