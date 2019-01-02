@@ -21,7 +21,7 @@ private:
     string equ;
     int nums[Size];
     int x;
-    int result = 0;
+    int result;
 public:
     // A x x x x + B x x x + C x x + D x x + E
     equsolver(string A = "A*x*x*x*x + B*x*x*x + C*x*x + D*x + E",int a = 0){
@@ -34,6 +34,7 @@ public:
     ~equsolver(){}
     
     void Solve(){
+        result = 0;
         for(int i = 0;i<Size;i++){
             result = result + (nums[i] * pow(x,i));
         }
