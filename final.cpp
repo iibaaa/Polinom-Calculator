@@ -21,8 +21,10 @@ int calculate_one_part(string a,int x);
 
 int main()
 {
+    // Pol and X value
     string pol1 = "5*x*x*x + 3*x*0*x+5*0 +4";
     int x = 3;
+    //
     
     cout << pol1  << " | x = "<< x<<endl;
     delete_char(&pol1, ' ');
